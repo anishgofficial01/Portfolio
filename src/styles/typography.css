@@ -1,0 +1,81 @@
+/**
+ * Editorial typography utilities
+ * Tight line-heights and massive display scale for cinematic hierarchy.
+ */
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display), system-ui, sans-serif;
+  }
+
+  .font-body {
+    font-family: var(--font-body), system-ui, sans-serif;
+  }
+
+  .text-hero-title {
+    font-size: var(--text-hero-title);
+    line-height: var(--leading-hero);
+    letter-spacing: -0.03em;
+  }
+
+  .text-hero-sub {
+    font-size: var(--text-hero-sub);
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+  }
+
+  .text-hero-rotate {
+    font-size: var(--text-hero-rotate);
+    line-height: var(--leading-hero);
+    letter-spacing: -0.03em;
+  }
+
+  .text-display {
+    font-size: var(--text-display);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .text-h1 {
+    font-size: var(--text-h1);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .text-h2 {
+    font-size: var(--text-h2);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .text-h3 {
+    font-size: var(--text-h3);
+    line-height: var(--leading-snug);
+    letter-spacing: -0.02em;
+  }
+
+  .text-body-editorial {
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+  }
+
+  .text-small-editorial {
+    font-size: var(--text-small);
+    line-height: var(--leading-body);
+  }
+
+  .text-label-editorial {
+    font-size: var(--text-label);
+    line-height: 1.4;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}

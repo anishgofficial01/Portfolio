@@ -1,0 +1,64 @@
+/**
+ * Design tokens — luxury dark editorial system
+ * Single source of truth for colors, spacing rhythm, motion, and z-index.
+ */
+
+:root {
+  /* Colors */
+  --color-bg-primary: #040404;
+  --color-bg-secondary: #161616;
+  --color-text-primary: #f5f5f0;
+  --color-text-secondary: #8a8a8a;
+  --color-accent: #ff3d00;
+  --color-border: rgba(245, 245, 240, 0.08);
+  --color-border-strong: rgba(245, 245, 240, 0.14);
+
+  /* Spacing rhythm — editorial whitespace scale */
+  --space-section-y: clamp(6rem, 14vw, 12rem);
+  --space-section-y-sm: clamp(4rem, 10vw, 8rem);
+  --space-gutter: clamp(1.25rem, 4vw, 3rem);
+  --space-gutter-full: clamp(1rem, 2vw, 1.5rem);
+  --space-max-width: 1440px;
+  --space-content-narrow: 720px;
+  --space-content-wide: 1120px;
+
+  /* Motion */
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --duration-fast: 0.4s;
+  --duration-base: 0.7s;
+  --duration-slow: 1.2s;
+  --duration-cinematic: 1.8s;
+
+  /* Typography scale — fluid editorial hierarchy */
+  --text-hero-title: clamp(1.875rem, 3.5vw, 2.75rem);
+  --text-hero-sub: clamp(0.75rem, 0.85vw, 0.8125rem);
+  --text-hero-rotate: clamp(2.75rem, 5vw, 5rem);
+  --text-display: clamp(3.5rem, 11vw, 9rem);
+  --text-h1: clamp(2.75rem, 7vw, 6rem);
+  --text-h2: clamp(2rem, 4.5vw, 3.5rem);
+  --text-h3: clamp(1.5rem, 2.5vw, 2.25rem);
+  --text-body: clamp(1rem, 1.1vw, 1.125rem);
+  --text-small: clamp(0.8125rem, 0.9vw, 0.9375rem);
+  --text-label: 0.75rem;
+  --leading-hero: 0.88;
+  --leading-tight: 0.92;
+  --leading-snug: 1.05;
+  --leading-body: 1.6;
+  --tracking-tight: -0.04em;
+  --tracking-wide: 0.12em;
+
+  /* Layout */
+  --header-height: 5rem;
+  /** Move the whole portrait frame — 50% = center, 65% = right, 35% = left */
+  --hero-frame-position-x: 57%;
+  /** Nudge frame after anchor (e.g. -8%, 2rem) */
+  --hero-frame-offset-x: 0%;
+  /** Crop inside the frame — 50% center, 60% shows more of image's left side */
+  --hero-image-object-x: 50%;
+  --z-base: 1;
+  --z-overlay: 50;
+  --z-loader: 100;
+  --z-cursor: 200;
+}
