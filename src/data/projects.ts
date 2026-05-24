@@ -1,7 +1,6 @@
 import type { ProjectSlide } from "./project-galleries";
 import { getProjectGallery } from "./project-galleries";
 import type { ProjectVideo } from "./project-media";
-import { getProjectVideo } from "./project-media";
 
 export interface Project {
   id: string;
@@ -62,6 +61,5 @@ export const projects: readonly Project[] = [
     description:
       "Gamified productivity experience inspired by progression systems — blending habit tracking with cinematic UI and motion-led feedback.",
     tags: ["Next.js", "Mobile-first", "UX", "Gamification"],
-    video: getProjectVideo("solo-leveling"),
   },
 ] as const;

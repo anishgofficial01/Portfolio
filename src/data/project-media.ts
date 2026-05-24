@@ -4,12 +4,7 @@ export interface ProjectVideo {
   label: string;
 }
 
-export const projectVideos: Record<string, ProjectVideo> = {
-  "solo-leveling": {
-    src: "/SoloLevelingAppDemo.mp4",
-    label: "Product Demo",
-  },
-};
+export const projectVideos: Record<string, ProjectVideo> = {};
 
 export function getProjectVideo(projectId: string): ProjectVideo | undefined {
   return projectVideos[projectId];
